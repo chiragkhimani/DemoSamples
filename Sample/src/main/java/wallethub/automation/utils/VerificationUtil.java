@@ -1,25 +1,25 @@
 package wallethub.automation.utils;
 
 import org.openqa.selenium.WebElement;
-import org.testng.TestNG;
-import org.testng.asserts.SoftAssert;
 
 public class VerificationUtil implements AssertProperties {
-	public static final SoftAssert softly = new SoftAssert();
+	// public static final SoftAssert softly = new SoftAssert();
 
-	public static SoftAssert getAssert() {
-		return softly;
-	}
+	// public static SoftAssert getAssert() {
+	// return softly;
+	// }
 
 	public static void verifyTrue(boolean condition, String passMsg, String failMsg) {
-		TestNG test = new TestNG();
-		test.setVerbose(0);
-		if (condition) {
-			ReportUtil.getScenario().write(String.format(verifyTruePass, passMsg));
-		} else {
-			ReportUtil.getScenario().write(String.format(verifyTrueFail, failMsg, DriverUtil.getScreenshot()));
-			System.setProperty("IS_FAILED", "true");
-		}
+		// TestNG test = new TestNG();
+		// test.setVerbose(0);
+		// if (condition) {
+		// ReportUtil.getScenario().write(String.format(verifyTruePass,
+		// passMsg));
+		// } else {
+		// ReportUtil.getScenario().write(String.format(verifyTrueFail, failMsg,
+		// DriverUtil.getScreenshot()));
+		// System.setProperty("IS_FAILED", "true");
+		// }
 	}
 
 	public static void verifyPresent(WebElement ele, String label) {
