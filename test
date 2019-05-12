@@ -1,0 +1,18 @@
+<plugin>
+				<groupId>net.masterthought</groupId>
+				<artifactId>maven-cucumber-reporting</artifactId>
+				<version>3.4.0</version>
+				<executions>
+					<execution>
+						<id>execution</id>
+						<goals>
+							<goal>generate</goal>
+						</goals>
+						<configuration>
+							<projectName>OMT</projectName>
+							<outputDirectory>report</outputDirectory>
+							<cucumberOutput>${project.build.directory}/</cucumberOutput>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
